@@ -29,7 +29,7 @@ public class Humain {
 		System.out.println("Mmmm, un bon verre de " + boissonPref + " ! GLOUPS !");
 	}
 
-	private void acheter(String bien, int prix) {
+	public void acheter(String bien, int prix) {
 		int nvArgent = argent - prix;
 		if (nvArgent <= 0) {
 			System.out.println("Je n'ai plus que " + argent + " sous en poche. " + "Je ne peux même pas m'offrir un "
