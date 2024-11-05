@@ -3,7 +3,7 @@ package personnages;
 public class Humain {
 	private String nom;
 	private String boissonPref;
-	private int argent;
+	protected int argent;
 
 	public Humain(String nom, String boissonPref, int argent) {
 		super();
@@ -21,7 +21,7 @@ public class Humain {
 	}
 
 	public void direBonjour() {
-		System.out.println("Bonjour ! Je m'appelle " + getNom() + " et j'aime boire du " + boissonPref);
+		System.out.println("Bonjour ! Je m'appelle " + getNom() + " et j'aime boire du " + boissonPref + ".");
 
 	}
 
@@ -42,11 +42,11 @@ public class Humain {
 		}
 	}
 
-	private void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
 		argent += gain;
 	}
 
-	private void perdreArgent(int perte) {
+	protected void perdreArgent(int perte) {
 		int nvArgent = argent - perte;
 		if (nvArgent < 0) {
 			argent = 0;
@@ -56,7 +56,7 @@ public class Humain {
 		;
 	}
 
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println("<<" + texte + ">>");
 	}
 
