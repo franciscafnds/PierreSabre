@@ -12,11 +12,11 @@ public class Humain {
 		this.argent = argent;
 	}
 
-	private String getNom() {
+	public String getNom() {
 		return nom;
 	}
 
-	private int getArgent() {
+	public int getArgent() {
 		return argent;
 	}
 
