@@ -42,4 +42,11 @@ public class Yakuza extends Humain {
 
 	}
 
+	@Override
+	public void direBonjour() {
+		// TODO Auto-generated method stub
+		super.direBonjour();
+		parler("Mon clan est celui de " + clan + ".");
+	}
+
 }

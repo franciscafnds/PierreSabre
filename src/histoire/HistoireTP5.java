@@ -21,6 +21,8 @@ public class HistoireTP5 {
 		roro.listerConnaissance();
 		yaku.listerConnaissance();
 
+		yaku.direBonjour();
+
 	}
 
 }
